@@ -9,4 +9,91 @@ BACKGROUND: #191414
   padding: 0;
   margin: 0;
   background-color:#191414 ;
+  font-family: 'Montserrat', sans-serif;
+}
+ 
+.search{
+  margin-top: 2%;
+  text-align: center;
+}
+
+.navigation{
+  margin-top: 1%;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navigation ul {
+  text-decoration: none;
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-around;
+  margin-right: 2%;
+  width: 30%;
+}
+
+
+.logo{
+  color: #1DB954;
+  font-size: 300%;
+  font-weight: 700;
+  margin-left: 2%;
+}
+
+.options{
+  text-align: center;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  margin-left: 3%;
+  color: white;
+}
+
+.search-bar{
+  width: 20%;
+  padding: 15px 22px;
+  margin: 10px 5px;
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  outline: none;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 2% 2%;
+}
+
+.playlist-img img{
+  width: 100%;
+}
+
+.playlist{
+  width: 20%;
+  margin: 2% 2%;
+
+}
+
+.playlist-title{
+  color: white;
+  width: 30%;
+}
+
+.playlist p{
+  width: 100%;
+  color: white;
+}
+
+.playlist a:visited{
+  text-decoration: none;
+}
+
+.playlist a:link{
+  text-decoration: none;
+}
+
+.base-title{
+  margin: 2% 2%;
+  color: white;
 }

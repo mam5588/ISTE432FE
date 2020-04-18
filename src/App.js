@@ -1,13 +1,53 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Playlist from './components/Playlist';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
     <div className="App">
-		<div className="navigation">
-			
+		<Navigation/>
+		<div className="search">
+			<input className="search-bar"></input>
 		</div>
+			<h1 className="base-title">Popular Playlist</h1>
+			<div className="container">
+				<Playlist
+					url="https://i.pinimg.com/originals/b4/75/00/b4750046d94fed05d00dd849aa5f0ab7.jpg"
+					title="blond"
+					desc="lorem ipsum asdfhaa asdf asdf asd fsadf askdfjasfdfd"
+				/>
+				<Playlist
+					url="https://i.pinimg.com/originals/b4/75/00/b4750046d94fed05d00dd849aa5f0ab7.jpg"
+					title="blond"
+					desc="lorem ipsum asdfhaa asdf asdf asd fsadf askdfjasfdfd"
+				/>
+				<Playlist
+					url="https://i.pinimg.com/originals/b4/75/00/b4750046d94fed05d00dd849aa5f0ab7.jpg"
+					title="blond"
+					desc="lorem ipsum asdfhaa asdf asdf asd fsadf askdfjasfdfd"
+				/>
+				<Playlist
+					url="https://i.pinimg.com/originals/b4/75/00/b4750046d94fed05d00dd849aa5f0ab7.jpg"
+					title="blond"
+					desc="lorem ipsum asdfhaa asdf asdf asd fsadf askdfjasfdfd"
+				/>
+				<Playlist
+					url="https://i.pinimg.com/originals/b4/75/00/b4750046d94fed05d00dd849aa5f0ab7.jpg"
+					title="blond"
+					desc="lorem ipsum asdfhaa asdf asdf asd fsadf askdfjasfdfd"
+				/>
+				<Playlist
+					url="https://i.pinimg.com/originals/b4/75/00/b4750046d94fed05d00dd849aa5f0ab7.jpg"
+					title="blond"
+					desc="lorem ipsum asdfhaa asdf asdf asd fsadf askdfjasfdfd"
+				/>
+				<Playlist
+					url="https://i.pinimg.com/originals/b4/75/00/b4750046d94fed05d00dd849aa5f0ab7.jpg"
+					title="blond"
+					desc="lorem ipsum asdfhaa asdf asdf asd fsadf askdfjasfdfd"
+				/>
+			</div>
     </div>
   );
 }
