@@ -1,5 +1,5 @@
 import Component from 'react';
-
+import { useForm } from 'react-hook-form'
 class CommentForm extends Component {
   constructor(props) {
     super(props);
@@ -19,11 +19,13 @@ class CommentForm extends Component {
   }
 
   render() {
+    const { register, handleSubmit } = useForm()
+    const onSubmit = data => console.log(data)
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
           Comment:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input type="text" value={this.state.value} onChange={this.handleChange} ref={register({ required: true, maxLength: 144 })} />
         </label>
         <input type="submit" value="Submit" />
       </form>
