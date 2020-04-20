@@ -8,7 +8,7 @@ function App() {
     <div className="App">
 		<Navigation/>
 		<div className="search">
-			<input className="search-bar"></input>
+			<input className="search-bar" placeholder="Search..."></input>
 		</div>
 			<h1 className="base-title">Popular Playlist</h1>
 			<div className="container">
