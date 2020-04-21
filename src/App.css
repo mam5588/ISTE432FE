@@ -11,89 +11,70 @@ BACKGROUND: #191414
   background-color:#191414 ;
   font-family: 'Montserrat', sans-serif;
 }
- 
-.search{
-  margin-top: 2%;
-  text-align: center;
-}
 
-.navigation{
-  margin-top: 1%;
-  display: inline-flex;
-  justify-content: space-between;
-  width: 100%;
-}
+/* NAVIGATION BAR */
+  .navigation-bar{
+    margin-top: 1%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.navigation ul {
-  text-decoration: none;
-  list-style: none;
-  display: inline-flex;
-  justify-content: space-around;
-  margin-right: 2%;
-  width: 30%;
-}
+  .title{
+    color: #1DB954;
+    font-size: 300%;
+    margin-left: 5%;
+  }
 
+  .menu{
+    width: 40%;
+  }
 
-.logo{
-  color: #1DB954;
-  font-size: 300%;
-  font-weight: 700;
-  margin-left: 2%;
-}
+  .menu ul{
+    margin-top: 2.5%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
 
-.options{
-  text-align: center;
-  margin-top: 1.5%;
-  margin-bottom: 1.5%;
-  margin-left: 3%;
-  color: white;
-}
+  .menu ul li{
+    color: white;
+  }
+/* NAVIGATION BAR END */
 
-.search-bar{
-  width: 20%;
-  padding: 15px 22px;
-  margin: 10px 5px;
-  background-color: #FFFFFF;
-  border-radius: 40px;
-  outline: none;
-}
+/* Search Bar */
+  .search-form{
+    margin-top: 2%;
+    text-align: center;
+  }
 
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  margin: 2% 2%;
-}
+  .search-bar{
+    background-color: white;
+    width: 20%;
+    font-size: 120%;
+    height: 40px;
+    border-radius: 40px;
+    padding-left: 20px;
+    border: none;
+    margin: 0 2% 0;
+  }
 
-.playlist-img img{
-  width: 100%;
-}
+  .search-bar:focus{
+    outline: none;
+  }
 
-.playlist{
-  width: 20%;
-  margin: 2% 2%;
+  .button{
+    background-color: #1DB954;
+    border: none;
+    color: white;
+    width: 5%;
+    height: 40px;
+    font-size: 120%;
+    border-radius: 40px;
+  }
 
-}
+  .button:hover{
+    cursor: pointer;
+  }
 
-.playlist-title{
-  color: white;
-  width: 30%;
-}
-
-.playlist p{
-  width: 100%;
-  color: white;
-}
-
-.playlist a:visited{
-  text-decoration: none;
-}
-
-.playlist a:link{
-  text-decoration: none;
-}
-
-.base-title{
-  margin: 2% 2%;
-  color: white;
-}
+/* Search Bar End*/

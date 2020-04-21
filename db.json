@@ -1,0 +1,18 @@
+[
+    {
+        "playlistID": "cyh[a8'jc[ab40ew",
+        "name": "My Rock Playlist",
+        "ownerID": "vhfcdio[ahjd80esarfu034fn'ac",
+        "owner": "Badass Artist #1",
+        "tracks": [
+        {
+        "title": "Living On A Prayer",
+        "artist": "Bon Jovi"
+        },
+        {
+        "title": "Stairway To Heaven",
+        "artist": "Led Zeppelin"
+        }
+        ]
+    }
+]
