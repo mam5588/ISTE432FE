@@ -18,6 +18,15 @@ class CommentForm extends Component {
     event.preventDefault();
   }
 
+  handleTest(){
+    const input = wrapper.find('input');
+    expect(input).toHaveLength(144);
+    const button = wrapper.find('button');
+    expect(button).toHaveLength(1);
+    expect(button.prop('type')).toEqual('submit');
+    expect(button.text()).toEqual('Submit');
+  }
+
   render() {
     const { register, handleSubmit } = useForm()
     const onSubmit = data => console.log(data)
