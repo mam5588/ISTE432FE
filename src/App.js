@@ -12,7 +12,11 @@ function App() {
   return (
     <Provider store={store}>
       <NavBar/>
-      <Landing/>
+      <div class="container">
+      
+        <Landing/>
+
+        </div>
     </Provider>
   );
 }
