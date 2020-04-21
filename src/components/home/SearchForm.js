@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {searchPlaylist} from '../../actions/searchActions';
+import {searchPlaylist, fetchPlaylists} from '../../actions/searchActions';
 
 import {connect} from 'react-redux'
 
@@ -9,10 +9,15 @@ export class SearchForm extends Component {
         this.props.searchPlaylist(e.target.value);
     };
 
+    onSubmit= e =>{
+        e.preventDefault();
+        this.props.fetchPlaylists(this.props.text);
+    }
+
     render() {
         return (
             <div>
-                <form>
+                <form onSubmit={this.onSubmit}>
                     <input 
                     className="search-bar"
                     type="text" 
@@ -21,7 +26,7 @@ export class SearchForm extends Component {
                     autoComplete="off"
                     onChange={this.onChange}
                     />
-                    <button type="submit" class="button">Search</button>
+                    <button type="submit" className="button">Search</button>
                 </form>
             </div>
         )
@@ -32,4 +37,7 @@ const mapStateToProps = state => ({
     text: state.playlists.text
 });
 
-export default connect(mapStateToProps, {searchPlaylist})(SearchForm);
+export default connect(
+    mapStateToProps, 
+    {searchPlaylist, fetchPlaylists}
+    )(SearchForm);

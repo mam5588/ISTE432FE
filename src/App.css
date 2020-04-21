@@ -78,3 +78,19 @@ BACKGROUND: #191414
   }
 
 /* Search Bar End*/
+
+
+/* PlaylistContainer */
+
+  .playlist-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .playlist-card img{
+    width: 250px;
+  }
+
+  .playlist-card p{
+    color: white;
+  }

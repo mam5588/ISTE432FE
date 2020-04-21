@@ -1,10 +1,10 @@
-import {SEARCH_PLAYLIST} from '../actions/types';
+import {SEARCH_PLAYLIST, FETCH_PLAYLIST} from '../actions/types';
 
 const initialState = {
     text: '',
-    playlist : [],
+    playlists : [],
     loading: false,
-    movie: []
+    playlist: []
 }
 
 export default function(state = initialState, action){
@@ -14,7 +14,13 @@ export default function(state = initialState, action){
                 ...state, 
                 text: action.payload,
                 loading: false
-            }
+            };
+        case FETCH_PLAYLIST:
+            return {
+                ...state, 
+                playlists: action.payload,
+                loading: false
+            };
         default: 
             return state
     }

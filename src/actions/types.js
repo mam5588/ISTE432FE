@@ -1,1 +1,2 @@
 export const SEARCH_PLAYLIST = 'SEARCH_PLAYLIST';
+export const FETCH_PLAYLIST = 'FETCH_PLAYLIST';
