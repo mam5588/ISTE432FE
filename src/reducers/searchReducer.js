@@ -1,4 +1,4 @@
-import {SEARCH_PLAYLIST, FETCH_PLAYLIST} from '../actions/types';
+import {SEARCH_PLAYLIST, FETCH_PLAYLISTS, FETCH_PLAYLIST} from '../actions/types';
 
 const initialState = {
     text: '',
@@ -15,10 +15,16 @@ export default function(state = initialState, action){
                 text: action.payload,
                 loading: false
             };
-        case FETCH_PLAYLIST:
+        case FETCH_PLAYLISTS:
             return {
                 ...state, 
                 playlists: action.payload,
+                loading: false
+            };
+        case FETCH_PLAYLIST:
+            return {
+                ...state, 
+                playlist: action.payload,
                 loading: false
             };
         default: 

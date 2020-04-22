@@ -3,20 +3,27 @@ import './App.css';
 import {Provider} from 'react-redux'; 
 import NavBar from './components/layout/NavBar'
 import Landing from './components/home/Landing';
-import {HashRouter as Route} from 'react-router-dom';
+import {HashRouter as Router, Route} from 'react-router-dom';
+import Playlist from './components/home/Playlist';
+
+
 
 import store from './store';
+import { HashRouter } from 'react-router-dom';
 
 
 function App() {
   return (
     <Provider store={store}>
-      <NavBar/>
-      <div class="container">
-      
-        <Landing/>
-
-        </div>
+      <Router>
+          <div>
+          <NavBar/>
+            <div class="container">
+              <Route exact path="/" component={Landing}/>
+              <Route exact path="/playlist/:id" component={Playlist}/>
+            </div>
+          </div>
+        </Router>
     </Provider>
   );
 }

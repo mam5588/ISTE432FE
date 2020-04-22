@@ -80,6 +80,10 @@ BACKGROUND: #191414
     cursor: pointer;
   }
 
+  .button:focus{
+    outline: none;
+  }
+
 /* Search Bar End*/
 
 
