@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-
 import {fetchPlaylist} from '../../actions/searchActions';
 
 export class Playlist extends Component {
@@ -11,7 +10,7 @@ export class Playlist extends Component {
     render() {
         return (
             <div className="playlist-individual">
-                <p>works</p>
+                <p className="placeholder">works</p>
             </div>
         )
     }
