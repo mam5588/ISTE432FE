@@ -18,7 +18,7 @@ function App() {
       <Router>
           <div>
           <NavBar/>
-            <div class="container">
+            <div className="container">
               <Route exact path="/" component={Landing}/>
               <Route exact path="/playlist/:id" component={Playlist}/>
             </div>
