@@ -36,7 +36,7 @@ class CommentForm extends Component {
           Comment:
           <input type="text" value={this.state.value} onChange={this.handleChange} ref={register({ required: true, maxLength: 144 })} />
         </label>
-        <input type="submit" value="Submit" />
+        <button type="submit" className="button">Submit</button>
       </form>
     );
   }
