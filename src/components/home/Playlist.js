@@ -3,14 +3,14 @@ import {connect} from 'react-redux';
 import {fetchPlaylist} from '../../actions/searchActions';
 
 export class Playlist extends Component {
-
     componentDidMount(){
         this.props.fetchPlaylist(this.props.match.params.id)
     }
     render() {
+        console.log(this.props);
         return (
             <div className="playlist-individual">
-                <p className="placeholder">works</p>
+                <p className="placeholder">Title</p>
             </div>
         )
     }
